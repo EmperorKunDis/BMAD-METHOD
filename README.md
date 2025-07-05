@@ -1,390 +1,483 @@
-# BMad-Method: Universal AI Agent Framework
+Zde je kompletní text přeložený do češtiny, s citacemi zdrojů:
 
-[![Version](https://img.shields.io/npm/v/bmad-method?color=blue&label=version)](https://www.npmjs.com/package/bmad-method)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Node.js Version](https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen)](https://nodejs.org)
+# BMad-Method: Univerzální Rámec pro Agenty AI
+
+[![Verze](https://img.shields.io/npm/v/bmad-method?color=blue&label=version)](https://www.npmjs.com/package/bmad-method)
+[![Licence: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Verze Node.js](https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen)](https://nodejs.org)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Community-7289da?logo=discord&logoColor=white)](https://discord.gg/gk8jAdXWmj)
 
-Foundations in Agentic Agile Driven Development, known as the Breakthrough Method of Agile AI-Driven Development, but it is so much more. Transform any domain with specialized AI expertise: software development, entertainment, creative writing, business strategy to personal wellness just to name a few.
+Základy v Agilním Vývoji Řízeném Agenty, známé jako Průlomová Metoda Agilního Vývoje Řízeného AI, ale je to mnohem víc. Transformujte jakoukoli doménu se specializovanými AI znalostmi: vývoj softwaru, zábava, kreativní psaní, obchodní strategie až po osobní pohodu, abychom jmenovali jen několik.
 
-**[Subscribe to BMadCode on YouTube](https://www.youtube.com/@BMadCode?sub_confirmation=1)**
+**[Přihlaste se k odběru BMadCode na YouTube](https://www.youtube.com/@BMadCode?sub_confirmation=1)**
 
-**[Join our Discord Community](https://discord.gg/gk8jAdXWmj)** - A growing community for AI enthusiasts! Get help, share ideas, explore AI agents & frameworks, collaborate on tech projects, enjoy hobbies, and help each other succeed. Whether you're stuck on BMad, building your own agents, or just want to chat about the latest in AI - we're here for you!
+**[Připojte se k naší Discord Komunitě](https://discord.gg/gk8jAdXWmj)** - Rostoucí komunita pro nadšence AI! Získejte pomoc, sdílejte nápady, prozkoumávejte AI agenty a frameworky, spolupracujte na technických projektech, užívejte si koníčky a pomáhejte si navzájem uspět. Ať už jste uvízli s BMad, stavíte si vlastní agenty, nebo si jen chcete popovídat o nejnovějším dění v AI - jsme tu pro vás!
 
-⭐ **If you find this project helpful or useful, please give it a star in the upper right hand corner!** It helps others discover BMad-Method and you will be notified of updates!
+⭐ **Pokud shledáte tento projekt nápomocným nebo užitečným, prosím, dejte mu hvězdičku v pravém horním rohu!** Pomůže to ostatním objevit BMad-Method a budete upozorněni na aktualizace!
 
-## Quick Navigation
+## Rychlá navigace
 
-### 🚨 MUST READ: Understanding the BMad Workflow
+### 🚨 MUSÍTE PŘEČÍST: Pochopení BMad Workflow
 
-**Before diving in, review these critical workflow diagrams that explain how BMad works:**
+**Předtím, než se ponoříte, projděte si tyto kritické diagramy pracovního postupu, které vysvětlují, jak BMad funguje:**
 
-1. **[Planning Workflow (Web UI)](docs/user-guide.md#the-planning-workflow-web-ui)** - How to create PRD and Architecture documents
-2. **[Core Development Cycle (IDE)](docs/user-guide.md#the-core-development-cycle-ide)** - How SM, Dev, and QA agents collaborate through story files
+1. **[Workflow plánování (Webové UI)](docs/user-guide.md#the-planning-workflow-web-ui)** - Jak vytvářet dokumenty PRD a Architektury
 
-> ⚠️ **These diagrams explain 90% of BMad Method Agentic Agile flow confusion** - Understanding the PRD+Architecture creation and the SM/Dev/QA workflow and how agents pass notes through story files is essential - and also explains why this is NOT taskmaster or just a simple task runner!
+2. **[Základní vývojový cyklus (IDE)](docs/user-guide.md#the-core-development-cycle-ide)** - Jak agenti SM, Dev a QA spolupracují prostřednictvím souborů příběhů
 
-### What would you like to do?
+> ⚠️ **Tyto diagramy vysvětlují 90 % zmatků v agenturním agilním toku BMad Method** - Pochopení tvorby PRD+Architektury a pracovního postupu SM/Dev/QA a toho, jak agenti předávají poznámky prostřednictvím souborů příběhů, je zásadní - a také vysvětluje, proč to NENÍ taskmaster nebo jen jednoduchý spouštěč úkolů!
 
-- **[Build software with Full Stack Agile AI Team](quick-start)** → Quick Start Instruction
-- **[Learn how to use BMad](docs/user-guide.md)** → Complete user guide and walkthrough
-- **[See available AI agents](#available-agents)** → Specialized roles for your team
-- **[Explore non-technical uses](#-beyond-software-development---expansion-packs)** → Creative writing, business, wellness, education
-- **[Create my own AI agents](#creating-your-own-expansion-pack)** → Build agents for your domain
-- **[Browse ready-made expansion packs](expansion-packs/)** → Game dev, DevOps, infrastructure and get inspired with ideas and examples
-- **[Understand the architecture](docs/core-architecture.md)** → Technical deep dive
-- **[Join the community](https://discord.gg/g6ypHytrCB)** → Get help and share ideas
+### Co byste chtěli dělat?
 
-### Popular Use Cases
+*   **[Tvořit software s plnohodnotným agilním AI týmem](quick-start)** → Rychlý start
+*   **[Naučit se používat BMad](docs/user-guide.md)** → Kompletní uživatelská příručka a průvodce
+*   **[Zobrazit dostupné AI agenty](#available-agents)** → Specializované role pro váš tým
+*   **[Prozkoumat netechnické využití](#-beyond-software-development---expansion-packs)** → Kreativní psaní, byznys, wellness, vzdělávání
+*   **[Vytvořit si vlastní AI agenty](#creating-your-own-expansion-pack)** → Vytvořit agenty pro vaši doménu
 
-- **Software Development** - [Quick Start](quick-start) | [User Guide](docs/user-guide.md) | [Workflow Guides](#documentation--guides)
-- **Game Development** - [2D Phaser Pack](expansion-packs/bmad-2d-phaser-game-dev/)
-- **Business Strategy** - [Full Guide](docs/expansion-packs.md#business-strategy-pack)
-- **Creative Writing** - [Full Guide](docs/expansion-packs.md#creative-writing-pack)
-- **DevOps/Infrastructure** - [Infrastructure Pack](expansion-packs/bmad-infrastructure-devops/)
+*   **[Procházet hotové rozšiřující balíčky](expansion-packs/)** → Vývoj her, DevOps, infrastruktura a inspirovat se nápady a příklady
+*   **[Pochopit architekturu](docs/core-architecture.md)** → Technický hloubkový ponor
+*   **[Připojit se ke komunitě](https://discord.gg/g6ypHytrCB)** → Získat pomoc a sdílet nápady
 
-### Quick Links
+### Populární případy použití
 
-- **[Installation](#installation)** → Get started in minutes
-- **[Documentation](#documentation--guides)** → All guides and references
-- **[Contributing](#contributing)** → Help improve BMad
-- **[Support](#support)** → Get help and connect
+*   **Vývoj softwaru** - [Rychlý start](quick-start) | [Uživatelská příručka](docs/user-guide.md) | [Průvodci workflow](#documentation--guides)
 
-## Important: Keep Your BMad Installation Updated
+*   **Vývoj her** - [2D Phaser Pack](expansion-packs/bmad-2d-phaser-game-dev/)
 
-**Stay up-to-date effortlessly!** If you already have BMad-Method installed in your project, simply run:
+*   **Obchodní strategie** - [Kompletní průvodce](docs/expansion-packs.md#business-strategy-pack)
+
+*   **Kreativní psaní** - [Kompletní průvodce](docs/expansion-packs.md#creative-writing-pack)
+
+*   **DevOps/Infrastruktura** - [Infrastruktura Pack](expansion-packs/bmad-infrastructure-devops/)
+
+### Rychlé odkazy
+
+*   **[Instalace](#installation)** → Začněte za pár minut
+
+*   **[Dokumentace](#documentation--guides)** → Všechny průvodce a reference
+
+*   **[Přispívání](#contributing)** → Pomozte zlepšit BMad
+
+*   **[Podpora](#support)** → Získejte pomoc a připojte se
+
+## Důležité: Udržujte svou instalaci BMad aktuální
+
+**Zůstaňte aktuální bez námahy!** Pokud již máte BMad-Method nainstalovaný ve svém projektu, jednoduše spusťte:
 
 ```bash
 npx bmad-method install
-# OR
+# NEBO
 git pull
 npm run install:bmad
 ```
 
-This will:
 
-- ✅ Automatically detect your existing v4 installation
-- ✅ Update only the files that have changed and add new files
-- ✅ Create `.bak` backup files for any custom modifications you've made
-- ✅ Preserve your project-specific configurations
+Toto provede:
 
-This makes it easy to benefit from the latest improvements, bug fixes, and new agents without losing your customizations! If for some reason this fails, you can rename or remove your .bmad-code folder and run the install again. The main thing to look out for is if you have set up custom modes that are not file driven (Cursor is the only one at this time that is not done through project files lagging behind) - you will want to ensure your sm and dev custom modes especially are kept up to date.
+*   ✅ Automaticky detekuje vaši existující instalaci v4
 
-## Quick Start
+*   ✅ Aktualizuje pouze změněné soubory a přidá nové soubory
 
-### One Command for Everything (IDE Installation)
+*   ✅ Vytvoří `.bak` záložní soubory pro jakékoli vlastní úpravy, které jste provedli
 
-**Just run one of these commands:**
+*   ✅ Zachová vaše konfigurace specifické pro projekt
+
+Díky tomu je snadné využívat nejnovější vylepšení, opravy chyb a nové agenty, aniž byste ztratili svá přizpůsobení! Pokud z nějakého důvodu selže, můžete přejmenovat nebo odstranit složku .bmad-code a znovu spustit instalaci. Hlavní věc, na kterou si dát pozor, je, pokud jste nastavili vlastní režimy, které nejsou řízeny soubory (Cursor je v tuto chvíli jediný, který není prováděn prostřednictvím souborů projektu a zaostává) - budete chtít zajistit, aby vaše vlastní režimy sm a dev byly udržovány aktuální.
+
+## Rychlý start
+
+### Jeden příkaz pro všechno (instalace IDE)
+
+**Stačí spustit jeden z těchto příkazů:**
 
 ```bash
 npx bmad-method install
-# OR if you already have BMad installed:
+# NEBO pokud už máte BMad nainstalovaný:
 git pull
 npm run install:bmad
 ```
 
-This single command handles:
 
-- **New installations** - Sets up BMad in your project
-- **Upgrades** - Updates existing installations automatically
-- **Expansion packs** - Installs any expansion packs you've added to package.json
+Tento jediný příkaz zpracovává:
 
-> **That's it!** Whether you're installing for the first time, upgrading, or adding expansion packs - these commands do everything.
+*   **Nové instalace** - Nastaví BMad ve vašem projektu
 
-**Prerequisites**: [Node.js](https://nodejs.org) v20+ required
+*   **Upgrady** - Automaticky aktualizuje stávající instalace
 
-### Fastest Start: Web UI (2 minutes)
+*   **Rozšiřující balíčky** - Nainstaluje jakékoli rozšiřující balíčky, které jste přidali do package.json
 
-1. **Get the bundle**: Copy `dist/teams/team-fullstack.txt` (from this repository)
-2. **Create AI agent**: Create a new Gemini Gem or CustomGPT
-3. **Upload & configure**: Upload the file and set instructions: "Your critical operating instructions are attached, do not break character as directed"
-4. **Start Ideating and Planning**: Start chatting! Type `*help` to see available commands or pick an agent like `*analyst` to start right in on creating a brief.
+> **To je vše!** Ať už instalujete poprvé, upgradujete, nebo přidáváte rozšiřující balíčky - tyto příkazy dělají vše.
 
-> **All pre-built bundles are in the `dist/` folder** - ready to copy and use immediately!
+**Předpoklady**: [Node.js](https://nodejs.org) v20+ je vyžadován
 
-### Alternative: Clone and Build
+### Nejrychlejší start: Webové UI (2 minuty)
+
+1.  **Získejte balíček**: Zkopírujte `dist/teams/team-fullstack.txt` (z tohoto repozitáře)
+
+2.  **Vytvořte AI agenta**: Vytvořte nový Gemini Gem nebo CustomGPT
+
+3.  **Nahrajte a nakonfigurujte**: Nahrajte soubor a nastavte instrukce: "Vaše kritické provozní instrukce jsou připojeny, nepřerušujte charakter podle pokynů"
+
+4.  **Začněte s nápadem a plánováním**: Začněte chatovat! Napište `*help` pro zobrazení dostupných příkazů nebo si vyberte agenta jako `*analyst` a začněte hned vytvářet shrnutí.
+
+> **Všechny předpřipravené balíčky jsou ve složce `dist/`** - připravené ke zkopírování a okamžitému použití!
+
+### Alternativa: Klonování a sestavení
 
 ```bash
 git clone https://github.com/bmadcode/bmad-method.git
-npm run install:bmad # build and install all to a destination folder
+npm run install:bmad # sestaví a nainstaluje vše do cílové složky
 ```
 
-## Overview
 
-The BMad Method (Breakthrough Method of Agile Agentic-Driven Development) elevates 'Vibe Coding' by utilizing advanced prompt engineering techniques and critical context management at the most critical stages of development implementation. By providing specialized AI agents for every role in an Agile team, each agent has deep expertise in their domain helping you really plan and execute on your vision while keeping the agents on the rails even through complex application plans.
+## Přehled
 
-Unlike systems like Task Master, or inbuilt Task tools, the BMad Methods agile flow does so much more. With most systems, you give your idea, and the system churns out a plan, task list, lets you review it and then starts executing. Where the BMad agile flow is different is you can choose to have more upfront planning and architecture specification to ensure the system is built in a sustainable way, not a vibe coded spaghetti mess. When producing the PRD and Architectures (full stack, front end and or backend), the Agents work with you back and forth using advanced proven LLM prompt engineering advanced techniques to produce anything beyond what the average slop LLMs and Task generators will produce on their own. This truly is a system of Human in the Loop producing markedly better results.
+BMad Method (Průlomová Metoda Agilního Vývoje Řízeného Agenty) pozvedá 'Vibe Coding' využitím pokročilých technik prompt engineeringu a kritického řízení kontextu v nejdůležitějších fázích implementace vývoje. Poskytováním specializovaných AI agentů pro každou roli v agilním týmu, každý agent má hluboké znalosti ve své doméně, což vám pomůže skutečně plánovat a realizovat vaši vizi, zatímco udržuje agenty na správné cestě i při složitých aplikačních plánech.
 
-## Installation
+Na rozdíl od systémů jako Task Master nebo vestavěných nástrojů pro úkoly, agilní tok BMad Method dělá mnohem více. U většiny systémů zadáte svůj nápad a systém vygeneruje plán, seznam úkolů, umožní vám ho zkontrolovat a poté začne provádět. Kde se agilní tok BMad liší, je, že si můžete zvolit více předběžného plánování a specifikace architektury, abyste zajistili, že systém bude postaven udržitelným způsobem, nikoli jako chaotický špagetový kód. Při vytváření PRD a architektur (full stack, front end nebo back end) agenti s vámi pracují tam a zpět pomocí pokročilých osvědčených technik LLM prompt engineeringu, aby vytvořili cokoli, co přesahuje to, co průměrné nekvalitní LLM a generátory úkolů vyprodukují samy. Toto je skutečně systém "Human in the Loop" (člověk v procesu), který produkuje znatelně lepší výsledky.
 
-### Method 1: CLI Installer (For IDEs)
+## Instalace
 
-**Just run one command:**
+### Metoda 1: CLI instalátor (pro IDE)
+
+**Stačí spustit jeden příkaz:**
 
 ```bash
 npx bmad-method install
-# OR if you already have BMad installed:
+# NEBO pokud už máte BMad nainstalovaný:
 npm run install:bmad
 ```
 
-**This single command does everything:**
 
-- Installs BMad for the first time
-- Updates existing installations
-- Adds any expansion packs from your package.json
+**Tento jediný příkaz dělá vše:**
 
-**Prerequisites**: Install [Node.js](https://nodejs.org) v20+ first
+*   Instaluje BMad poprvé
 
-### Method 2: Pre-Built Web Bundles (For Web UI)
+*   Aktualizuje stávající instalace
 
-For ChatGPT, Claude, or Gemini web interfaces:
+*   Přidává jakékoli rozšiřující balíčky z vašeho package.json
 
-1. Choose a bundle:
-   - **Recommended**: `dist/teams/team-fullstack.txt` (complete development team)
-   - Or pick from individual agents in `dist/agents/`
-2. Upload to your AI platform (Gemini Gem, CustomGPT, or directly in chat)
-3. Set instructions: "Your critical operating instructions are attached, do not break character as directed"
-4. Type `/help` to see available commands
+**Předpoklady**: Nejprve nainstalujte [Node.js](https://nodejs.org) v20+
 
-**Supported IDEs:**
+### Metoda 2: Předpřipravené webové balíčky (pro webové UI)
 
-The BMad Method works with any IDE, but has built-in integration for:
+Pro webová rozhraní ChatGPT, Claude nebo Gemini:
 
-- `cursor` - Cursor IDE with manual rule @agent commands
-- `claude-code` - Claude Code with /agent commands
-- `cline` - Cline Rules integration
-- `gemini-cli` - Gemini with @agent commands
-- `windsurf` - Windsurf with manual rule @agent commands
-- `roo` - Roo Code with custom modes (see `.roomodes`)
-- `github-copilot` - GitHub Copilot agent mode integration
+1.  Vyberte balíček:
 
-## Available Agents
+    *   **Doporučeno**: `dist/teams/team-fullstack.txt` (kompletní vývojový tým)
 
-### Core Development Team
+    *   Nebo si vyberte z jednotlivých agentů ve `dist/agents/`
 
-| Agent       | Role               | Specialty                                                                                    |
+2.  Nahrajte na vaši AI platformu (Gemini Gem, CustomGPT, nebo přímo do chatu)
+
+3.  Nastavte instrukce: "Vaše kritické provozní instrukce jsou připojeny, nepřerušujte charakter podle pokynů"
+
+4.  Napište `/help` pro zobrazení dostupných příkazů
+
+**Podporovaná IDE:**
+
+BMad Method funguje s jakýmkoli IDE, ale má vestavěnou integraci pro:
+
+*   `cursor` - Cursor IDE s manuálními pravidly @agent příkazů
+
+*   `claude-code` - Claude Code s /agent příkazy
+
+*   `cline` - Cline Rules integrace
+
+*   `gemini-cli` - Gemini s @agent příkazy
+
+*   `windsurf` - Windsurf s manuálními pravidly @agent příkazů
+
+*   `roo` - Roo Code s vlastními režimy (viz `.roomodes`)
+
+*   `github-copilot` - Integrace režimu agenta GitHub Copilot
+
+## Dostupné agenty
+
+### Základní vývojový tým
+
+| Agent | Role | Specializace |
 | ----------- | ------------------ | -------------------------------------------------------------------------------------------- |
-| `analyst`   | Business Analyst   | market analysis, brainstorming, project brief creation                                       |
-| `pm`        | Product Manager    | Product strategy, MVP Decisioning, PRD creation with Epics                                   |
-| `architect` | Solution Architect | System design, technical full stack, front end or backend architecture                       |
-| `ux-expert` | UX Designer        | User experience, UI design, prompts for V0, Lovable, and others                              |
-| `po`        | Product Owner      | Ensure PRD and Architecture are aligned, and changes from architecture end up in PRD stories |
-| `sm`        | Scrum Master       | High level epics and stories transformed into detailed dev stories with tasks and subtasks   |
-| `dev`       | Developer          | Code implementation across all technologies - follows the detailed SM created story          |
-| `qa`        | QA Specialist      | Detailed review of the devs ready for review story, refactor and propose issues and changes  |
+| `analyst` | Business Analytik | analýza trhu, brainstorming, tvorba projektových briefů |
+| `pm` | Product Manager | Produktová strategie, rozhodování o MVP, tvorba PRD s Epiky |
+| `architect` | Solution Architect | Návrh systému, technická full stack, front end nebo back end architektura |
+| `ux-expert` | UX Designer | Uživatelská zkušenost, UI design, prompty pro V0, Lovable a další |
+| `po` | Product Owner | Zajistit soulad PRD a Architektury a to, aby změny z architektury skončily v příbězích PRD |
+| `sm` | Scrum Master | Epiky a příběhy na vysoké úrovni transformované do detailních vývojových příběhů s úkoly a podúkoly |
+| `dev` | Developer | Implementace kódu napříč všemi technologiemi - sleduje detailní příběh vytvořený SM |
+| `qa` | QA Specialista | Detailní revize příběhu vývojáře připraveného k revizi, refaktoring a navrhování problémů a změn
 
-### BMad Agents
+### BMad Agenti
 
-| Agent               | Role             | Specialty                                                                                                                |
+| Agent | Role | Specializace |
 | ------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| `bmad-orchestrator` | Team Coordinator | Helps guide you and answers your questions with its massive knowledge base, and guides you through Multi-agent workflows |
-| `bmad-master`       | Universal Expert | All capabilities without switching (Except Dev)                                                                          |
+| `bmad-orchestrator` | Koordinátor týmu | Pomáhá vám a odpovídá na vaše otázky díky své rozsáhlé znalostní bázi a provádí vás pracovními postupy s více agenty |
+| `bmad-master` | Univerzální Expert | Všechny možnosti bez přepínání (kromě Dev) |
 
-## Advanced Features
+## Pokročilé funkce
 
-### Dynamic Dependencies
+### Dynamické závislosti
 
-Each agent only loads the resources it needs, keeping context windows lean.
+Každý agent načítá pouze zdroje, které potřebuje, čímž udržuje kontextová okna štíhlá.
 
-### Template System
+### Systém šablon
 
-Rich templates for all document types:
+Bohaté šablony pro všechny typy dokumentů:
 
-- Product Requirements (PRD)
-- Architecture Documents
-- User Stories
-- Test Plans
-- And more...
+*   Požadavky na produkt (PRD)
 
-Templates are unique in that they are embedded with the LLM instructions also for further working with you to prompt and elicit the best from you and your agile agent team member - allowing for unique coaching and customization options. While there is a single create-doc task, the possibilities are endless when you expand the templates into more doc types, or customize with your own docs embedded with the templating markup and LLM instruction framework that is core to the BMad Method.
+*   Architektonické dokumenty
 
-### Slash Star Commands
+*   Uživatelské příběhy
 
-Ask the agent you are using for help with /help (in the web) or \*help in the ide to see what commands are available!
+*   Testovací plány
 
-### Advanced Elicitation
+*   A další...
 
-Many of the Agents and Templates for docs, and some tasks, include Advanced Elicitation directives based on the latest in LLM interactions and pro level prompt engineering guidance. With this, you can push the Agents further than ever before. If an agent proposes an idea, or an architecture - you can push it further with optional elicitations where it will have to really expand on, defend, or produce other options and prove its suggestion was better. This is a necessary step if you want the absolute best beyond accepting the generated average responses the LLMs think you want to hear for their first response. Some of this is interactive, and some of this is baked into the core prompting engine that powers the LLM progression through various tasks and template flows.
+Šablony jsou jedinečné tím, že jsou v nich zabudovány i instrukce LLM pro další práci s vámi, aby se z vás a vašeho agilního člena týmu vytáhlo to nejlepší – což umožňuje jedinečné možnosti koučování a přizpůsobení. Zatímco existuje jediný úkol `create-doc`, možnosti jsou nekonečné, když rozšíříte šablony na více typů dokumentů nebo je přizpůsobíte vlastními dokumenty s vloženým šablonovacím značkováním a rámcem instrukcí LLM, které jsou jádrem BMad Method.
 
-## Usage
+### Příkazy Slash Star
 
-The BMad Method follows a structured Agile workflow with specialized AI agents. For complete usage instructions and walkthroughs, see the **[User Guide](docs/user-guide.md)**.
+Zeptejte se agenta, kterého používáte, o pomoc pomocí `/help` (na webu) nebo `*help` v IDE, abyste viděli, jaké příkazy jsou k dispozici!
 
-### Quick Start Examples
+### Pokročilá elicitace
 
-#### With IDE Integration
+Mnoho agentů a šablon pro dokumenty a některé úkoly zahrnují pokročilé direktivy pro elicitaci založené na nejnovějších interakcích LLM a pokročilých pokynech pro prompt engineering. S tímto můžete agenty posunout dál než kdykoli předtím. Pokud agent navrhne nápad nebo architekturu – můžete to posunout dál s volitelnými elicitacemi, kde se bude muset skutečně rozšířit, obhájit nebo vytvořit jiné možnosti a prokázat, že jeho návrh byl lepší. Toto je nezbytný krok, pokud chcete absolutně nejlepší výsledky nad rámec přijímání generovaných průměrných odpovědí, které si LLM myslí, že chcete slyšet pro svou první odpověď. Něco z toho je interaktivní a něco je vloženo do základního prompting engine, který pohání postup LLM různými úkoly a toky šablon.
+
+## Použití
+
+BMad Method se řídí strukturovaným agilním pracovním postupem se specializovanými AI agenty. Kompletní pokyny k použití a průvodce naleznete v **[Uživatelské příručce](docs/user-guide.md)**.
+
+### Příklady rychlého startu
+
+#### S integrací IDE
 
 ```bash
-# In Cursor
-@pm Create a PRD for a task management app
+# V Cursor
+@pm Vytvoř PRD pro aplikaci pro správu úkolů
 
-# In Claude Code
-/architect Design a microservices architecture
+# V Claude Code
+/architect Navrhni mikroservisní architekturu
 
-# In Windsurf
-@dev Implement story 1.3
+# Ve Windsurf
+@dev Implementuj příběh 1.3
 ```
 
-#### With Web UI
 
-After uploading a bundle, type `/help` to see available commands.
+#### S webovým UI
 
-### Key Resources
+Po nahrání balíčku zadejte `/help` pro zobrazení dostupných příkazů.
 
-- **[Complete User Guide](docs/user-guide.md)** - Full walkthrough from project inception to completion
-- **[CLI Commands](docs/user-guide.md#cli-commands)** - Installation, updates, and management
-- **[Upgrading from V3](docs/user-guide.md#upgrading-from-v3-to-v4)** - Migration instructions
-- **[Core Configuration](docs/user-guide.md#core-configuration)** - V4's flexible project structure support
-- **[Teams & Workflows](docs/user-guide.md#team-configurations)** - Pre-configured agent teams
+### Klíčové zdroje
 
-## Project Structure
+*   **[Kompletní uživatelská příručka](docs/user-guide.md)** - Kompletní průvodce od počátku projektu až po jeho dokončení
 
-See the **[Core Architecture](docs/core-architecture.md)** for the complete source tree and detailed explanations of each component.
+*   **[Příkazy CLI](docs/user-guide.md#cli-commands)** - Instalace, aktualizace a správa
 
-### Key Directories
+*   **[Upgrade z V3](docs/user-guide.md#upgrading-from-v3-to-v4)** - Pokyny pro migraci
 
-- **`.bmad-core/`** - Heart of the framework (agents, templates, workflows)
-- **`dist/`** - Pre-built bundles ready for web UI use
-- **`expansion-packs/`** - Domain-specific extensions
-- **`tools/`** - Build and installation utilities
-- **`docs/`** - Your project documentation (PRD, architecture, stories)
+*   **[Základní konfigurace](docs/user-guide.md#core-configuration)** - Podpora flexibilní projektové struktury V4
 
-### 📦 Pre-Built Bundles (dist/ folder)
+*   **[Týmy a pracovní postupy](docs/user-guide.md#team-configurations)** - Předkonfigurované týmy agentů
 
-**All ready-to-use bundles are in the `dist/` directory!**
+## Struktura projektu
 
-- **Teams**: `dist/teams/` - Complete team configurations
+Viz **[Základní architektura](docs/core-architecture.md)** pro kompletní strom zdrojových souborů a detailní vysvětlení každé komponenty.
 
-  - `team-fullstack.txt` - Full-stack development team
-  - `team-ide-minimal.txt` - Minimal IDE workflow team
-  - `team-no-ui.txt` - Backend-only team
-  - `team-all.txt` - All agents included
+### Klíčové adresáře
 
-- **Individual Agents**: `dist/agents/` - Single agent files
+*   **`.bmad-core/`** - Srdce frameworku (agenti, šablony, workflowy)
 
-  - One `.txt` file per agent (analyst, architect, dev, etc.)
+*   **`dist/`** - Předpřipravené balíčky připravené pro použití ve webovém UI
 
-- **Expansion Packs**: `dist/expansion-packs/` - Specialized domains
-  - Game development, DevOps, etc.
+*   **`expansion-packs/`** - Rozšíření specifická pro danou doménu
 
-**For Web UI usage**: Simply copy any `.txt` file from `dist/` and upload to your AI platform!`
+*   **`tools/`** - Nástroje pro sestavení a instalaci
 
-## Documentation & Guides
+*   **`docs/`** - Vaše projektová dokumentace (PRD, architektura, příběhy)
 
-### Architecture & Technical
+### 📦 Předpřipravené balíčky (složka dist/)
 
-- 🏗️ [Core Architecture](docs/core-architecture.md) - Complete technical architecture and system design
-- 📖 [User Guide](docs/user-guide.md) - Comprehensive guide to using BMad-Method effectively
-- 🚀 [Expansion Packs Guide](docs/expansion-packs.md) - Extend BMad to any domain beyond software development
+**Všechny balíčky připravené k použití jsou v adresáři `dist/`!**
 
-### Workflow Guides
+*   **Týmy**: `dist/teams/` - Kompletní konfigurace týmů
 
-- 📚 [Universal BMad Workflow Guide](docs/bmad-workflow-guide.md) - Core workflow that applies to all IDEs
-- 🏗️ [Working in the Brownfield Guide](docs/working-in-the-brownfield.md) - Complete guide for enhancing existing projects
+    *   `team-fullstack.txt` - Full-stack vývojový tým
 
-### IDE-Specific Guides
+    *   `team-ide-minimal.txt` - Minimální IDE workflow tým
 
-- 🎯 [Cursor Guide](docs/agentic-tools/cursor-guide.md) - Setup and usage for Cursor
-- 🤖 [Claude Code Guide](docs/agentic-tools/claude-code-guide.md) - Setup and usage for Claude Code
-- 🌊 [Windsurf Guide](docs/agentic-tools/windsurf-guide.md) - Setup and usage for Windsurf
-- 🦘 [Roo Code Guide](docs/agentic-tools/roo-code-guide.md) - Setup and usage for Roo Code
-- 🔧 [Cline Guide](docs/agentic-tools/cline-guide.md) - Setup and usage for Cline (VS Code)
-- ✨ [Gemini CLI Guide](docs/agentic-tools/gemini-cli-guide.md) - Setup and usage for Gemini CLI
-- 💻 [Github Copilot Guide](docs/agentic-tools/github-copilot-guide.md) - Setup and usage for VS Code with GitHub Copilot
+    *   `team-no-ui.txt` - Tým pouze pro backend
 
-## 🌟 Beyond Software Development - Expansion Packs
+    *   `team-all.txt` - Všichni agenti zahrnuti
 
-While BMad excels at software development, its natural language framework can structure expertise in ANY domain. Expansion packs transform BMad into a universal AI agent system for creative writing, business strategy, health & wellness, education, and much more.
+*   **Jednotliví agenti**: `dist/agents/` - Soubory jednotlivých agentů
 
-### Available Expansion Packs
+    *   Jeden soubor `.txt` pro každého agenta (analyst, architect, dev atd.)
 
-#### Technical Domains
+*   **Rozšiřující balíčky**: `dist/expansion-packs/` - Specializované domény
 
-- 🎮 **[Game Development](expansion-packs/bmad-2d-phaser-game-dev/)** - Complete game studio team with designers, developers, and narrative writers
-- 🏗️ **[Infrastructure/DevOps](expansion-packs/bmad-infrastructure-devops/)** - Cloud architects, security specialists, SRE experts
-- 📱 **Mobile Development** - iOS/Android specialists, mobile UX designers
-- 🔗 **Blockchain/Web3** - Smart contract developers, DeFi architects
+    *   Vývoj her, DevOps atd.
 
-#### Non-Technical Domains
+**Pro použití s webovým UI**: Jednoduše zkopírujte libovolný `.txt` soubor z `dist/` a nahrajte jej na vaši AI platformu!
 
-- 💼 **Business Strategy** - Strategic planners, market analysts, business coaches
-- 💪 **Health & Wellness** - Fitness coaches, nutrition advisors, meditation guides
-- 🎨 **Creative Arts** - Story writers, world builders, character developers
-- 📚 **Education** - Curriculum designers, tutors, learning coaches
-- 🧠 **Personal Development** - Life coaches, goal setters, habit builders
-- 🏢 **Professional Services** - Legal advisors, content creators, research assistants
+## Dokumentace a průvodci
 
-### Creating Your Own Expansion Pack
+### Architektura a technické
 
-Transform your expertise into AI agents:
+*   🏗️ [Základní architektura](docs/core-architecture.md) - Kompletní technická architektura a návrh systému
 
-1. **Identify your domain** - What knowledge do you want to share?
-2. **Design specialized agents** - Each with unique expertise and personality
-3. **Create reusable tasks** - Standard procedures in your field
-4. **Build professional templates** - Structured outputs for consistency
-5. **Share with the community** - Help others benefit from your expertise
+*   📖 [Uživatelská příručka](docs/user-guide.md) - Komplexní průvodce efektivním používáním BMad-Method
 
-📖 **[Read the full Expansion Packs Guide](docs/expansion-packs.md)** - Detailed examples, inspiration, and technical details
+*   🚀 [Průvodce rozšiřujícími balíčky](docs/expansion-packs.md) - Rozšiřte BMad na jakoukoli doménu mimo vývoj softwaru
 
-## Support
+### Průvodci workflow
 
-- 💬 [Discord Community](https://discord.gg/g6ypHytrCB)
-- 📖 [Documentation](docs/)
-- 🐛 [Issue Tracker](https://github.com/bmadcode/bmad-method/issues)
-- 💬 [Discussions](https://github.com/bmadcode/bmad-method/discussions)
+*   📚 [Univerzální průvodce BMad Workflow](docs/bmad-workflow-guide.md) - Klíčový pracovní postup, který platí pro všechna IDE
 
-## License
+*   🏗️ [Práce v prostředí Brownfield Guide](docs/working-in-the-brownfield.md) - Kompletní průvodce pro vylepšení stávajících projektů
 
-MIT License - see [LICENSE](LICENSE) for details.
+### Průvodci specifickými pro IDE
 
-## Version History
+*   🎯 [Průvodce pro Cursor](docs/agentic-tools/cursor-guide.md) - Nastavení a použití pro Cursor
 
-- **Current**: [v4](https://github.com/bmadcode/bmad-method) - Complete framework rewrite with CLI installer, dynamic dependencies, and expansion packs
-- **Previous Versions**:
-  - [Version 3](https://github.com/bmadcode/BMad-Method/tree/V3) - Introduced the unified BMad Agent and Gemini optimization
-  - [Version 2](https://github.com/bmadcode/BMad-Method/tree/V2) - Added web agents and template separation
-  - [Version 1](https://github.com/bmadcode/BMad-Method/tree/V1) - Original 7-file proof of concept
+*   🤖 [Průvodce pro Claude Code](docs/agentic-tools/claude-code-guide.md) - Nastavení a použití pro Claude Code
 
-See [versions.md](docs/versions.md) for detailed version history and migration guides.
+*   🌊 [Průvodce pro Windsurf](docs/agentic-tools/windsurf-guide.md) - Nastavení a použití pro Windsurf
 
-## Author
+*   🦘 [Průvodce pro Roo Code](docs/agentic-tools/roo-code-guide.md) - Nastavení a použití pro Roo Code
 
-Created by Brian (BMad) Madison
+*   🔧 [Průvodce pro Cline](docs/agentic-tools/cline-guide.md) - Nastavení a použití pro Cline (VS Code)
 
-## Contributing
+*   ✨ [Průvodce pro Gemini CLI](docs/agentic-tools/gemini-cli-guide.md) - Nastavení a použití pro Gemini CLI
 
-**We're excited about contributions and welcome your ideas, improvements, and expansion packs!** 🎉
+*   💻 [Průvodce pro Github Copilot](docs/agentic-tools/github-copilot-guide.md) - Nastavení a použití pro VS Code s GitHub Copilot
 
-### Before Contributing - MUST READ
+## 🌟 Mimo vývoj softwaru - Rozšiřující balíčky
 
-To ensure your contribution aligns with the BMad Method and gets merged smoothly:
+Zatímco BMad vyniká ve vývoji softwaru, jeho rámec pro přirozený jazyk dokáže strukturovat odborné znalosti v JAKÉKOLI doméně. Rozšiřující balíčky transformují BMad na univerzální systém AI agentů pro kreativní psaní, obchodní strategii, zdraví a wellness, vzdělávání a mnoho dalšího.
 
-1. 📋 **Read [CONTRIBUTING.md](CONTRIBUTING.md)** - Our contribution guidelines, PR requirements, and process
-2. 🎯 **Read [GUIDING-PRINCIPLES.md](GUIDING-PRINCIPLES.md)** - Core principles that keep BMad powerful through simplicity
-3. 🆕 **New to GitHub?** Start with our [Pull Request Guide](docs/how-to-contribute-with-pull-requests.md)
+### Dostupné rozšiřující balíčky
 
-### Key Points to Remember
+#### Technické domény
 
-- Keep dev agents lean (save context for coding!)
-- Use small, focused files over large branching ones
-- Reuse existing tasks (like `create-doc`) instead of creating duplicates
-- Consider expansion packs for domain-specific features and not improvements to the core system (those belong in the core system)
-- All contributions must follow our natural language, markdown-based templating approach with template embedded LLM instructions and elicitations
+*   🎮 **[Vývoj her](expansion-packs/bmad-2d-phaser-game-dev/)** - Kompletní tým herního studia s designéry, vývojáři a narativními spisovateli
 
-We're building something amazing together - let's keep it simple, powerful, and focused! 💪
+*   🏗️ **[Infrastruktura/DevOps](expansion-packs/bmad-infrastructure-devops/)** - Cloudoví architekti, bezpečnostní specialisté, SRE experti
 
-### Development Setup
+*   📱 **Mobilní vývoj** - Specialisté na iOS/Android, mobilní UX designéři
 
-Want to help improve the BMad Method. Fork n' Clone the repo
+*   🔗 **Blockchain/Web3** - Vývojáři chytrých kontraktů, architekti DeFi
+
+#### Netechnické domény
+
+*   💼 **Obchodní strategie** - Strategičtí plánovači, analytici trhu, obchodní kouči
+
+*   💪 **Zdraví a wellness** - Fitness kouči, výživoví poradci, průvodci meditací
+
+*   🎨 **Kreativní umění** - Spisovatelé příběhů, tvůrci světů, vývojáři postav
+
+*   📚 **Vzdělávání** - Návrháři kurikul, učitelé, kouči učení
+
+*   🧠 **Osobní rozvoj** - Životní kouči, stanovování cílů, budování návyků
+
+*   🏢 **Profesionální služby** - Právní poradci, tvůrci obsahu, výzkumní asistenti
+
+### Vytvoření vlastního rozšiřujícího balíčku
+
+Přeměňte své odborné znalosti na agenty AI:
+
+1.  **Identifikujte svou doménu** - Jaké znalosti chcete sdílet?
+
+2.  **Navrhněte specializované agenty** - Každý s jedinečnými odbornými znalostmi a osobností
+
+3.  **Vytvořte opakovaně použitelné úkoly** - Standardní postupy ve vašem oboru
+
+4.  **Vytvořte profesionální šablony** - Strukturované výstupy pro konzistenci
+
+5.  **Sdílejte s komunitou** - Pomozte ostatním těžit z vašich odborných znalostí
+
+📖 **[Přečtěte si kompletního průvodce rozšiřujícími balíčky](docs/expansion-packs.md)** - Detailní příklady, inspirace a technické detaily
+
+## Podpora
+
+*   💬 [Discord Komunita](https://discord.gg/g6ypHytrCB)
+
+*   📖 [Dokumentace](docs/)
+
+*   🐛 [Sledování chyb](https://github.com/bmadcode/bmad-method/issues)
+
+*   💬 [Diskuze](https://github.com/bmadcode/bmad-method/discussions)
+
+## Licence
+
+MIT Licence - podrobnosti viz [LICENCE](LICENSE).
+
+## Historie verzí
+
+*   **Aktuální**: [v4](https://github.com/bmadcode/bmad-method) - Kompletní přepsání frameworku s CLI instalátorem, dynamickými závislostmi a rozšiřujícími balíčky
+
+*   **Předchozí verze**:
+
+    *   [Verze 3](https://github.com/bmadcode/BMad-Method/tree/V3) - Představila sjednoceného BMad Agenta a optimalizaci Gemini
+
+    *   [Verze 2](https://github.com/bmadcode/BMad-Method/tree/V2) - Přidány weboví agenti a oddělení šablon
+
+    *   [Verze 1](https://github.com/bmadcode/BMad-Method/tree/V1) - Původní 7-souborový důkaz konceptu
+
+Podrobné informace o historii verzí a průvodce migrací naleznete v [versions.md](docs/versions.md).
+
+## Autor
+
+Vytvořil Brian (BMad) Madison
+
+## Přispívání
+
+**Jsme nadšeni z příspěvků a vítáme vaše nápady, vylepšení a rozšiřující balíčky!** 🎉
+
+### Před přispíváním - MUSÍTE PŘEČÍST
+
+Abyste zajistili, že váš příspěvek je v souladu s BMad Method a bude hladce začleněn:
+
+1.  📋 **Přečtěte si [CONTRIBUTING.md](CONTRIBUTING.md)** - Naše směrnice pro přispívání, požadavky na PR a proces
+
+2.  🎯 **Přečtěte si [GUIDING-PRINCIPLES.md](GUIDING-PRINCIPLES.md)** - Klíčové principy, které udržují BMad výkonný díky jednoduchosti
+
+3.  🆕 **Jste noví na GitHubu?** Začněte s naším [Průvodcem pro Pull Requesty](docs/how-to-contribute-with-pull-requests.md)
+
+### Klíčové body k zapamatování
+
+*   Udržujte vývojové agenty štíhlé (šetřete kontext pro kódování!)
+
+*   Používejte malé, cílené soubory namísto velkých rozvětvených
+
+*   Znovu používejte stávající úkoly (jako `create-doc`) namísto vytváření duplikátů
+
+*   Zvažte rozšiřující balíčky pro funkce specifické pro doménu, nikoli vylepšení základního systému (ty patří do základního systému)
+
+*   Všechny příspěvky musí dodržovat náš přístup založený na přirozeném jazyce a markdownu s vloženými instrukcemi LLM a elicitacemi do šablon
+
+Budujeme něco úžasného společně - udržujme to jednoduché, výkonné a zaměřené! 💪
+
+### Vývojové nastavení
+
+Chcete pomoci vylepšit BMad Method. Forkněte a naklonujte repozitář
 
 ```bash
 git clone https://github.com/bmadcode/bmad-method.git
+```
+
+
+```bash
 cd bmad-method
 
-npm run build # rebuild the dist folder
-npm run install:bmad # build and install all to a destination folder
+npm run build # znovu sestaví složku dist
+
+npm run install:bmad # sestaví a nainstaluje vše do cílové složky
 ```
 
-[![Contributors](https://contrib.rocks/image?repo=bmadcode/bmad-method)](https://github.com/bmadcode/bmad-method/graphs/contributors)
 
-<sub>Built with ❤️ for the AI-assisted development community</sub>
+[![Přispěvatelé](https://contrib.rocks/image?repo=bmadcode/bmad-method)](https://github.com/bmadcode/bmad-method/graphs/contributors)
+
+Vybudováno s ❤️ pro komunitu vývoje s podporou AI
